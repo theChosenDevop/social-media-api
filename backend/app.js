@@ -16,6 +16,6 @@ mongoose
   )
   .then(() => app.listen(5000))
   .then(() =>
-    console.log("Connected to Database and listening to Localhsot 5000")
+    console.log("Connected to Database and listening to Localhost 5000")
   )
   .catch((err) => console.log(err));

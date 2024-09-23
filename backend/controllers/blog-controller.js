@@ -104,7 +104,7 @@ export const getByUserId = async (req, res, next) => {
   const userId = req.params.id;
   let userBlogs;
   try {
-    userBlogs = await User.findById(userId).populate("blog")
+    userBlogs = await User.findById(userId).populate("blogs")
   } catch (err) {
     return console.log(err)
   }
